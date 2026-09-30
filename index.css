@@ -1,0 +1,28 @@
+/* Ajustes para a Sidebar ocupar a altura inteira */
+.sidebar {
+  min-height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 6px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+  background-color: #0d6efd !important;
+}
+
+/* Transição suave no conteúdo ao trocar de tela */
+#content-area {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
