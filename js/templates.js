@@ -129,4 +129,33 @@ export const templates = {
         </div>
     </div>
 `,
+cadastro: () => `
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="mb-4 text-center">Criar Conta</h2>
+                    <form id="form-cadastro-usuario">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" required placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" required placeholder="********">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 mb-3">
+                            <i class="bi bi-person-plus"></i> Cadastrar
+                        </button>
+                        <p class="text-center mb-0">Já tem uma conta? <a href="#login">Faça login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+`
 };
